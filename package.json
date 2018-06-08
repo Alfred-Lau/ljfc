@@ -1,0 +1,15 @@
+{
+  "name": "ljfc",
+  "version": "0.0.1",
+  "description": "speed your code reading, have fun!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "refresh"
+  ],
+  "author": "lj",
+  "license": "ISC"
+}
