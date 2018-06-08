@@ -1,6 +1,6 @@
 {
   "name": "ljfc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "speed your code reading, have fun!",
   "main": "index.js",
   "bin": {

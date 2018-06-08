@@ -6,6 +6,7 @@ var fs = require('fs')
 const nrm = spawn('nrm', ['ls']);
 const rl = readline.createInterface({ input: nrm.stdout })
 const CWD = process.cwd()
+console.log(CWD)
 
 function getDirList(path) {
   return new Promise((resolve, reject) => {
@@ -16,7 +17,7 @@ function getDirList(path) {
       }
 
       files.forEach(function (file) {
-        const path = `${__dirname}/${file}`
+        const path = `${process.cwd()}/${file}`
         const stats = fs.statSync(path)
 
         if (stats.isDirectory()) {
@@ -55,6 +56,8 @@ rl.on('line', (line) => {
     })
     return true;
   }
+  console.info('未使用淘宝源，请切换')
+
   return false;
 });
 
