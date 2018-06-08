@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "speed your code reading, have fun!",
   "main": "index.js",
+  "bin": {
+    "ljfc": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +13,10 @@
     "git",
     "refresh"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfred-Lau/ljfc.git"
+  },
   "author": "lj",
   "license": "ISC"
 }
